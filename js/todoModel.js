@@ -8,11 +8,6 @@ var app = app || {};
 	'use strict';
 
 	var Utils = app.Utils;
-	// Generic "model" object. You can use whatever
-	// framework you want. For this application it
-	// may not even be worth separating this logic
-	// out, but we do this to demonstrate one way to
-	// separate out parts of your application.
 	app.TodoModel = function (key) {
 		this.key = key;
 		this.todos = Utils.store(key);
